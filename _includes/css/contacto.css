@@ -1,0 +1,41 @@
+.contacto li {
+  list-style: none;
+}
+
+.contacto h2{
+  margin: 2.5rem 0;
+}
+
+.contacto h3 {
+  margin: 2.5rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.nosotros {
+  padding: 0 2rem;
+}
+
+.nosotros p,
+.nosotros q,
+.nosotros figure {
+  margin: 1.5rem 0;
+}
+
+.nosotros h2 {
+  margin: 2rem 0;
+}
+
+.nosotros figure {
+  text-align: center;
+}
+
+.nosotros figure img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}
+
+.nosotros q {
+  font-family: var(--fuenteTitulos);
+  color: var(--complemento2);
+}

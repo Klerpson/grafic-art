@@ -1,0 +1,28 @@
+baseurl: ''
+url: 'https://graficartpublicidad.com'
+name: GRAFIC-Art
+author: GRAFIC-Art
+# email: info@enpitalito.com
+title: Agencia de publicidad GRAFIC-Art de Pitalito Huila
+# yotube: https://www.youtube.com/channel/UCiXWpAvZiAxwv7uzBGBagwQ?view_as=subscriber
+facebook: https://www.facebook.com/PitalitoGrafic.art
+instagram: https://www.instagram.com/grafic.artpitalito/
+whatsapp: https://wa.me/573144190060
+tel: tel://+573144190060
+maps: https://g.page/grafic-art-pitalito?share
+
+permalink: :slug
+
+markdown: kramdown
+
+keep_files: [/img]
+
+compress_html:
+    clippings: []
+    comments: []
+    endings: []
+    ignore:
+    envs: []
+    blanklines: false
+    profile: false
+    startings: []

@@ -1,0 +1,22 @@
+.magazine{
+  display: grid;
+  grid-gap: 2rem;
+  place-content: center;
+}
+.magazine p,
+.magazine h2{
+  width: 100%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.magazine article {
+  width: 300px;
+  justify-self: center;
+}
+
+.magazine article a img {
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+}

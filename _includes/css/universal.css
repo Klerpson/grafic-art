@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*:before, *:after {
+  content: "";
+}
+
+html {
+  line-height: 1.5;
+  scroll-behavior: auto;
+}
+
+body {
+  display: grid;
+  grid-gap: 3rem;
+  background-color: var(--blanco);
+  color: var(--grisFuentes);
+  font-family: var(--fuenteTexto);
+}
+
+:root {
+  --principal: #FD7414;
+  --secundario: #FDA600;
+  --accion: #FB4600;
+  --grisFuentes: #141414;
+  --gris1: rgba(191, 191, 191, 1);
+  --gris2: rgba(140, 140, 140, 1);
+  --gris3: rgba(89, 89, 89, 1);
+  --gris4: rgba(64, 64, 64, 1);
+  --shadow: 0 2px 5px rgba(14, 14, 14, .3);
+  --blanco: rgb(254, 255, 234);
+  --blancoRGBA: rgba(254, 255, 234, .7);
+  --fuenteTitulos: 'Source Sans Pro', sans-serif;
+  --fuenteTexto: 'Open Sans', sans-serif;
+}
+
+/* a {
+  text-decoration: underline;
+  -webkit-text-decoration-color: var(--principal);
+  text-decoration-color: var(--principal);
+  text-decoration-thickness: 0.2rem;
+  font-family: var(--fuenteTexto);
+  color: var(--principal);
+} */
+
+h1 {
+  font-size: clamp(22px, (1.5rem + 1vw) * 1.25, 2.2rem);
+}
+
+h2 {
+  font-size: clamp(20px, (1.3rem + 1vw) * 1.2, 2rem);
+  text-align: center;
+}
+
+h3 {
+  font-size: clamp(18px, (1.2rem + 1vw) * 1.1, 1.8rem);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fuenteTitulos);
+  line-height: 1.2;
+}
+
+img {
+  border-style: none;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+span {
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 5;
+}
+
+.botones {
+  width: max-content;
+  text-shadow: 0px 1px rgba(150, 129, 129, 0.2);
+  text-align: center;
+  text-decoration: none;
+  color: #FFF;
+  padding: 7px 20px;
+  white-space: nowrap;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 100px;
+  margin: 10px 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: var(--secundario);
+  box-shadow: 0px 5px 0px 0px var(--principal);
+}
+
+.botones:hover {
+  background: var(--accion);
+}
+
+.botones:active {
+  box-shadow: 0px 2px 0px 0px #C0392B;
+}
+
+
+.nav {
+  width: 300px;
+  height: 100%;
+  background-color: #e0fbfc;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper-2.png");
+  position: fixed;
+  top: 0;
+  right: -300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20% 0 0 60%;
+  z-index: 5;
+  transition: right .8s cubic-bezier(1, 0, 0, 1);
+}
+
+nav li {
+  list-style: none;
+}
+
+.nav-list {
+  text-align: right;
+}
+
+.nav-item {
+  margin: 3rem 4rem;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--principal);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  padding: 3px 0;
+  text-decoration: none;
+}
+
+.nav-link::after,
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--principal);
+  transform: scaleX(0);
+  transition: transform .5s ease-out;
+}
+
+.nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.nav-redes {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-redes a {
+  display: block;
+  width: 35px;
+  height: 30px;
+}
+
+.nav-redes a:nth-child(2) {
+  margin: 0 1rem;
+}
+
+.hamburguer-menu {
+  width: 35px;
+  height: 30px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--blancoRGBA);
+  padding: 0.18rem;
+  border-radius: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--principal);
+  transition: all .5s;
+}
+
+header {
+  position: relative;
+  height: 80vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+header img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: max-content;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
