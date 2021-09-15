@@ -270,7 +270,8 @@ q::after{
 }
 
 .portafolio .botones,
-.pruebas .botones {
+.pruebas .botones,
+.huila .botones {
   justify-self: center;
 }
 
@@ -345,17 +346,40 @@ q::after{
   background: #ffffff;
   box-shadow: -10px 10px 30px #d9d9d9,
     10px -10px 30px #ffffff;
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.suministros div article img{
-width: 100%;
+.suministros div article img {
+  width: 100%;
 }
 
 .suministros div article h4,
-.suministros div article p{
+.suministros div article p {
   text-align: center;
 }
+
+.huila {
+  height: 80vh;
+  background-image:
+    linear-gradient(rgba(14, 14, 14, 0.45),
+      rgba(14, 14, 14, 0.45)),
+    /* your image */
+    url(../../img/huila.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+.huila h2{
+  color: white;
+  max-width: 80vw;
+  text-shadow: var(--shadow);
+}
+
+
 
 footer {
   display: flex;
