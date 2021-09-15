@@ -237,15 +237,13 @@ header img{
 
  .change{right:0}.change .line-1{transform:rotateZ(-405deg) translate(-8px,6px)}.change .line-2{opacity:0}.change .line-3{transform:rotateZ(405deg) translate(-8px,-6px)}.nav-link:hover::before,.nav-link:hover::after{transform:scaleX(1)}
 
-.portafolio,
-.container {
+.portafolio {
   position: relative;
   display: grid;
   gap: 2rem;
 }
 
-.portafolio>p,
-.container>p {
+.portafolio>p {
   width: 80vw;
   justify-self: center;
 }
@@ -280,21 +278,28 @@ header img{
 /* Acordión de imágenes  */
 .pruebas {
   position: relative;
-  height: 70%;
   width: 100%;
   overflow: hidden;
 }
 
+.pruebas h2, .pruebas>p{
+  width: 80vw;
+  margin: 0 auto 3rem;
+}
+
 .container {
-  padding: 75px 0;
-  margin: 0 auto;
-  /* width: 1140px; */
+  position: relative;
+  margin: 0 auto 3rem;
 }
 
-.container h3 {
-  text-align: center;
+.container p {
+  position: absolute;
+  left: 2;
+  bottom: 0;
+  color: white;
+  font-weight: 700;
+  margin: 1rem;
 }
-
 .gallery-wrap {
   display: flex;
   flex-direction: row;
@@ -309,16 +314,6 @@ header img{
   background-size: cover;
   background-repeat: none;
   transition: flex 0.8s ease;
-}
-.social {
-  position: absolute;
-  right: 35px;
-  bottom: 0;
-}
-
-.social img {
-  display: block;
-  width: 32px;
 }
 
 /* endAcordión de imágenes */
