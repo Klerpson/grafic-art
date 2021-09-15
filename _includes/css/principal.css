@@ -114,7 +114,7 @@
     linear-gradient(rgba(14, 14, 14, 0.45),
       rgba(14, 14, 14, 0.45)),
     /* your image */
-    url(../../img/huila.png);
+    url({{site.baseurl}}/img/huila.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
