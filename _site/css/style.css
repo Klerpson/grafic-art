@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-*:before, *:after {
-  content: "";
-}
-
 html {
   line-height: 1.5;
   scroll-behavior: auto;
@@ -46,7 +42,7 @@ body {
   color: var(--principal);
 } */
 
-h1 {
+h1, q {
   font-size: clamp(22px, (1.5rem + 1vw) * 1.25, 2.2rem);
 }
 
@@ -89,6 +85,9 @@ span {
 }
 
 .botones {
+  display: inline-block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   text-shadow: 0px 1px rgba(150, 129, 129, 0.2);
   text-align: center;
@@ -96,14 +95,8 @@ span {
   color: #FFF;
   padding: 7px 20px;
   white-space: nowrap;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 100px;
   margin: 10px 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background: var(--secundario);
   box-shadow: 0px 5px 0px 0px var(--principal);
@@ -225,15 +218,33 @@ header {
   overflow: hidden;
 }
 
-header img{
+header img {
   position: absolute;
   top: 0;
   right: 0;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   height: 100%;
   z-index: -1;
   opacity: 0.7;
 }
+
+q {
+  background: rgb(20, 20, 20);
+  background: linear-gradient(12deg, rgba(20, 20, 20, 1) 0%, rgba(251, 70, 0, 1) 35%, rgba(253, 166, 0, 1) 100%);
+  color: var(--blanco);
+  padding: 2rem 1rem;
+  font-weight: 700;
+  font-family: var(--fuenteTitulos);
+  box-shadow: var(--shadow);
+}
+
+q::before,
+q::after{
+  font-size: 3.5rem;
+}
+
 
  .change{right:0}.change .line-1{transform:rotateZ(-405deg) translate(-8px,6px)}.change .line-2{opacity:0}.change .line-3{transform:rotateZ(405deg) translate(-8px,-6px)}.nav-link:hover::before,.nav-link:hover::after{transform:scaleX(1)}
 
@@ -243,7 +254,8 @@ header img{
   gap: 2rem;
 }
 
-.portafolio>p {
+.portafolio>p,
+.pruebas p {
   width: 80vw;
   justify-self: center;
 }
@@ -257,7 +269,8 @@ header img{
   padding: 1.5rem;
 }
 
-.portafolio .botones {
+.portafolio .botones,
+.pruebas .botones {
   justify-self: center;
 }
 
@@ -279,20 +292,16 @@ header img{
 .pruebas {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  display: grid;
+  gap: 3rem;
 }
 
-.pruebas h2, .pruebas>p{
-  width: 80vw;
-  margin: 0 auto 3rem;
-}
-
-.container {
+.acordeon {
   position: relative;
-  margin: 0 auto 3rem;
+  margin-bottom: 2rem;
 }
 
-.container p {
+.acordeon p {
   position: absolute;
   left: 2;
   bottom: 0;
@@ -300,6 +309,7 @@ header img{
   font-weight: 700;
   margin: 1rem;
 }
+
 .gallery-wrap {
   display: flex;
   flex-direction: row;
@@ -318,7 +328,55 @@ header img{
 
 /* endAcordión de imágenes */
 
-footer{display:flex;flex-wrap:wrap;justify-content:space-around;align-items:center;text-align:center;background:linear-gradient(rgba(224,251,252,1),rgba(250,250,250,.4))}footer a,footer p{display:inline-block;font-family:var(--fuenteTitulos)}footer a{color:var(--principal);margin:1rem .5rem;font-weight:700}
+.suministros {
+  display: grid;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.suministros div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.suministros div article {
+  width: 150px;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: -10px 10px 30px #d9d9d9,
+    10px -10px 30px #ffffff;
+    overflow: hidden;
+}
+
+.suministros div article img{
+width: 100%;
+}
+
+.suministros div article h4,
+.suministros div article p{
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(224, 251, 252, 1), rgba(250, 250, 250, .4))
+}
+
+footer a,
+footer p {
+  display: inline-block;
+  font-family: var(--fuenteTitulos)
+}
+
+footer a {
+  color: var(--principal);
+  margin: 1rem .5rem;
+  font-weight: 700
+}
 
 .articulo{
   display: grid;

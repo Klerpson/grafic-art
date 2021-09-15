@@ -4,7 +4,8 @@
   gap: 2rem;
 }
 
-.portafolio>p {
+.portafolio>p,
+.pruebas p {
   width: 80vw;
   justify-self: center;
 }
@@ -18,7 +19,8 @@
   padding: 1.5rem;
 }
 
-.portafolio .botones {
+.portafolio .botones,
+.pruebas .botones {
   justify-self: center;
 }
 
@@ -40,20 +42,16 @@
 .pruebas {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  display: grid;
+  gap: 3rem;
 }
 
-.pruebas h2, .pruebas>p{
-  width: 80vw;
-  margin: 0 auto 3rem;
-}
-
-.container {
+.acordeon {
   position: relative;
-  margin: 0 auto 3rem;
+  margin-bottom: 2rem;
 }
 
-.container p {
+.acordeon p {
   position: absolute;
   left: 2;
   bottom: 0;
@@ -61,6 +59,7 @@
   font-weight: 700;
   margin: 1rem;
 }
+
 .gallery-wrap {
   display: flex;
   flex-direction: row;
@@ -78,3 +77,32 @@
 }
 
 /* endAcordión de imágenes */
+
+.suministros {
+  display: grid;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.suministros div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.suministros div article {
+  width: 150px;
+  border-radius: 25px;
+  background: #ffffff;
+  box-shadow: -10px 10px 30px #d9d9d9,
+    10px -10px 30px #ffffff;
+    overflow: hidden;
+}
+
+.suministros div article img{
+width: 100%;
+}
+
+.suministros div article h4,
+.suministros div article p{
+  text-align: center;
+}
