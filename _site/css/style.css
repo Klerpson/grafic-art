@@ -27,8 +27,8 @@ body {
   --gris3: rgba(89, 89, 89, 1);
   --gris4: rgba(64, 64, 64, 1);
   --shadow: 0 2px 5px rgba(14, 14, 14, .3);
-  --blanco: rgb(254, 255, 234);
-  --blancoRGBA: rgba(254, 255, 234, .7);
+  --blanco: rgb(255, 255, 255);
+  --blancoRGBA: rgba(255, 255, 255, 0.7);
   --fuenteTitulos: 'Source Sans Pro', sans-serif;
   --fuenteTexto: 'Open Sans', sans-serif;
 }
@@ -576,6 +576,11 @@ q::after {
   width: 100%;
   display: grid;
   gap: 3rem;
+}
+
+.pruebas h2{
+  max-width: 90vw;
+  justify-self: center;
 }
 
 .acordeon {

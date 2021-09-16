@@ -47,6 +47,11 @@
   gap: 3rem;
 }
 
+.pruebas h2{
+  max-width: 90vw;
+  justify-self: center;
+}
+
 .acordeon {
   position: relative;
 }
