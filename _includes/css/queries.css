@@ -107,10 +107,6 @@
 
 @media screen and (min-width:1200px) {
 
-  .portafolio div {
-    grid-template-columns: repeat(5, 1fr);
-  }
-
   .portafolio div article h3 {
     text-align: center;
   }
