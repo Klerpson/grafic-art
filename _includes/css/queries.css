@@ -103,11 +103,16 @@
   .suministros div{
     gap: 1.5rem;
   }
+  
 }
 
 @media screen and (min-width:1200px) {
 
   .portafolio div article h3 {
     text-align: center;
+  }
+
+  .huila h2 {
+    max-width: 60vw;
   }
 }
