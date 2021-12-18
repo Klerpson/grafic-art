@@ -1,40 +1,45 @@
 ---
 layout: default
 title: GRAFIC-Art publicidad y diseño gráfico
-header: main-header.webp
-h1: GRAFIC-Art, la agencia de publicidad impresa y digital del Huila y del Putumayo
-description: GRAFIC-Art es publicidad impresa, publicidad digital y diseño gráfico efectivo, para el departamento del Huila.
+description: GRAFIC-Art es publicidad impresa, publicidad digital y diseño gráfico efectivo, para todo el departamento del Huila y Putumayo. Conócenos.
 boton: true
 ---
-{% include header.html %}
-<main class="portafolio">
+<header class="hero">
+  <img src="{{site.baseurl}}/img/main-header.webp" alt="" width="100vw" height="auto">
+  <h1>Grafic-Art Pitalito</h1>
+  <h2>Es la agencia de confianza para la publicidad impresa y digital de tu emprendimento</h2>
+  {% include boton.html path="https://wa.me/573144190060" texto="Escríbenos por WhatsApp" title="WhatsApp de la agencia de publicidad y diseño gráfico GRAFIC-Art de Pitalito" %}
+</header>
+<section class="intro">
   <h2>¿Necesitas publicidad digital o impresa en el Huila?</h2>
-  <p>En GRAFIC-Art te ayudamos a mejorar la publicidad de tu negocio o emprendimiento. Diseñamos tus <strong>impresiones digitales, banners publicitarios, letreros en distintos formatos, tarjetas de presentación, flyers o volantes, entre otros.</strong></p>
   <div>
-    <article>
-      <img src="{{site.baseurl}}/img/trabajo-ejemplo-1.webp" alt="" width="100%">
-      <h3>Descripción del Servicio</h3>
-    </article>
-    <article>
-      <img src="{{site.baseurl}}/img/trabajo-ejemplo-2.webp" alt="" width="100%">
-      <h3>Descripción del Servicio</h3>
-    </article>
-    <article>
-      <img src="{{site.baseurl}}/img/trabajo-ejemplo-1.webp" alt="" width="100%">
-      <h3>Descripción del Servicio</h3>
-    </article>
-    <article>
-      <img src="{{site.baseurl}}/img/trabajo-ejemplo-2.webp" alt="" width="100%">
-      <h3>Descripción del Servicio</h3>
-    </article>
-    <article>
-      <img src="{{site.baseurl}}/img/trabajo-ejemplo-1.webp" alt="" width="100%">
-      <h3>Descripción del Servicio</h3>
-    </article>
+    <lord-icon src="https://cdn.lordicon.com/gqdnbnwt.json" trigger="loop" colors="primary:#141414,secondary:#fb4600"
+      style="width: 250px; height: 250px;"> </lord-icon>
+    <p>En GRAFIC-Art te ayudamos a mejorar la publicidad de tu negocio o emprendimiento. Diseñamos tus
+      <strong>impresiones digitales, banners publicitarios, letreros en distintos formatos, tarjetas de presentación,
+        flyers o volantes, entre otros.</strong></p>
   </div>
-  <p>Cuando comencemos tus proyectos de publicidad digital, <i>te aseraremos para que consigas tus objetivos publicitarios de una manera sencilla, con mucho estilo y con las técnicas correctas</i> para generar resultados en tu inversión.</p>
-  {% include boton.html path="#" texto="Mirar más opciones" title="Catálogo de servicios y productos de GRAFIC-Art Pitalito Huila" %}
+</section>
+<main class="portafolio">
+  <article>
+    <img src="{{site.baseurl}}/img/tarjetas-presentacion.webp" alt="" width="100%">
+    <div>
+      <p>Con nuestros diseños de <strong>tarjetas de presentación</strong> conseguirás más y mejores contactos</p>
+      <a href="https://wa.me/p/4220570181328691/573144190060" class="botones" target="_blank">Socitar mis tarjetas</a>
+    </div>
+  </article>
+  <article>
+    <img src="{{site.baseurl}}/img/tarjetas-presentacion.webp" alt="" width="100%">
+    <div>
+      <p>¿Necesitas un <strong>banner publicitario</strong> bien diseñado y que dure mucho?</p>
+      <a href="https://wa.me/p/4220570181328691/573144190060" class="botones" target="_blank">Cotizar un banner publicitario</a>
+    </div>
+  </article>
 </main>
+<p>Cuando comencemos tus proyectos de publicidad digital, <i>te aseraremos para que consigas tus objetivos publicitarios
+    de una manera sencilla, con mucho estilo y con las técnicas correctas</i> para generar resultados en tu inversión.
+</p>
+{% include boton.html path="#" texto="Mirar más opciones" title="Catálogo de servicios y productos de GRAFIC-Art Pitalito Huila" %}
 <section class="pruebas">
   <q>Es muy importante que sea bonito y que te ayude a conseguir clientes</q>
   <h2>En GRAFIC-Art estamos orgullosos de apoyar los emprendimientos del Huila</h2>
@@ -50,7 +55,8 @@ boton: true
 <q>Cumplir - Responder - Impactar</q>
 <section class="suministros">
   <h2>¿Necesitas suminsitros de impresión digital?</h2>
-  <p>Queremos disponer ante ti nuestra bodega de suministros para impresión. ¿Qué necesitas? Contáctanos y consigue fácilmente tintas, papel, empanadas, alitas mix, jejjejejeje.</p>
+  <p>Queremos disponer ante ti nuestra bodega de suministros para impresión. ¿Qué necesitas? Contáctanos y consigue
+    fácilmente tintas, papel, empanadas, alitas mix, jejjejejeje.</p>
   <h3>Categoría</h3>
   <div>
     <article>
@@ -92,7 +98,8 @@ boton: true
   </div>
 </section>
 <section class="huila">
-  <h2>En Pitalito, San Agustín, Neiva, Acevedo, Saladoblanco, etc. Todo el Huila confía en los resultados de GRAFIC-Art</h2>
+  <h2>En Pitalito, San Agustín, Neiva, Acevedo, Saladoblanco, etc. Todo el Huila confía en los resultados de GRAFIC-Art
+  </h2>
   {% include boton.html path="#" texto="Escríbenos por WhatsApp" title="Catálogo de servicios y productos de GRAFIC-Art Pitalito Huila" %}
 </section>
 {% include footer.html %}

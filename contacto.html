@@ -5,8 +5,13 @@ h1: ¿Estas en San Agustín Huila? Visítanos
 description: GurCoff es el punto de encuentro favorito y más delicioso en San Agustín Huila. Conoce los horarios y datos de contacto de la heladería GurCoff.
 published: no
 ---
-{% include header.html %}
-
+<header>
+  {% if page.header %}
+  <img src="{{site.baseurl}}/img/{{page.header}}" alt="" width="100vw" height="auto">
+  {% endif %}
+  <h1>{{page.h1}}</h1>
+  {% include boton.html path="https://wa.me/573144190060" texto="Escríbenos por WhatsApp" title="WhatsApp de la agencia de publicidad y diseño gráfico GRAFIC-Art de Pitalito" %}
+</header>
 <section class="contacto">
   <h2>Horarios y datos de contacto de la Heladería GurCoff</h2>
   <h3>Dirección</h3>
