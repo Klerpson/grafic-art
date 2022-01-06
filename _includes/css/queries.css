@@ -12,11 +12,6 @@
 
 @media screen and (min-width:992px) {
 
-  q {
-    padding: 3rem;
-    text-align: center;
-  }
-
   .portafolio article{
     grid-template-columns: 600px auto;
     align-items: center;

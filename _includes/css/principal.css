@@ -28,7 +28,7 @@
 
 .hero h1,
 .hero h2 {
-  width: min(600px, 90%);
+  width: min(90%, 640px);
   text-align: center;
   line-height: 1.2;
   text-shadow: var(--shadow);
@@ -87,7 +87,15 @@
   position: relative;
   width: 100%;
   display: grid;
+  place-content: center;
   gap: 3rem;
+  /* margin: 5rem 0; */
+}
+
+.pruebas h2,
+.pruebas p{
+  width: min(90%, 640px);
+  margin: 0 auto;
 }
 
 .acordeon {
@@ -125,15 +133,18 @@
   display: grid;
   gap: 3rem;
   padding: 2rem;
+  width: min(90%, 640px);
+  place-content: center;
+  margin: 5rem auto;
 }
 
 .suministros div {
   display: grid;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 .suministros div article {
-  width: 150px;
   border-radius: 25px;
   background: #ffffff;
   box-shadow: -10px 10px 30px #d9d9d9,
