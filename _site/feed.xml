@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
      <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
-     <link href="https://graficartpublicidad.comfeed.xml" rel="self" type="application/atom+xml"/>
-     <link href="https://graficartpublicidad.com" rel="alternate" type="text/html"/>
-     <id>https://graficartpublicidad.com</id>
-     <updated>2022-01-06T12:03:21-05:00</updated>
+     <link href="http://localhost:4000feed.xml" rel="self" type="application/atom+xml"/>
+     <link href="http://localhost:4000" rel="alternate" type="text/html"/>
+     <id>http://localhost:4000</id>
+     <updated>2022-04-20T11:26:15-05:00</updated>
      <title type="html">Agencia de publicidad GRAFIC-Art de Pitalito Huila</title>
      <author>
        <name>Julian Andres Franco</name>
@@ -13,12 +13,11 @@
 
  
  <entry>
-   <title>San Agustín Huila - Turismo y Naturaleza</title>
-   <link href="https://graficartpublicidad.com/visita-san-agustin-huila"/>
-   <id>https://graficartpublicidad.com/visita-san-agustin-huila</id>
-   <updated>2021-06-07T00:00:00-05:00</updated>
-   <content type="html">
-</content>
+   <title>Banners iluminados y su efectividad</title>
+   <link href="http://localhost:4000/banner-con-luces-efectividad-garantizada"/>
+   <id>http://localhost:4000/banner-con-luces-efectividad-garantizada</id>
+   <updated>2022-04-20T00:00:00-05:00</updated>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit ea, sint quibusdam laborum dolorum eos et labore voluptatum pariatur. &lt;!-- excerpt --&gt; Iusto corrupti consectetur, perferendis, animi cum assumenda qui illum corporis praesentium minus inventore voluptate voluptatum pariatur vel itaque cumque harum. Animi veniam iure dolorum, error illo voluptatum...</content>
  </entry>
  
 

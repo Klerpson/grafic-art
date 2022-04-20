@@ -12,16 +12,6 @@
 
 @media screen and (min-width:992px) {
 
-  .portafolio article{
-    grid-template-columns: 600px auto;
-    align-items: center;
-  }
-
-  .portafolio article div{
-    position: absolute;
-    left: 550px;
-    width: 40vw;
-  }
 
   .acordeon p {
     font-size: 2rem;
@@ -42,6 +32,17 @@
 }
 
 @media screen and (min-width:1200px) {
+
+  .portafolio article {
+    grid-template-columns: 600px auto;
+    align-items: center;
+  }
+
+  .portafolio article div {
+    position: absolute;
+    left: 550px;
+    width: auto;
+  }
 
   .huila h2 {
     max-width: 60vw;

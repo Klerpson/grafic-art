@@ -1,22 +1,66 @@
-.magazine{
-  display: grid;
-  grid-gap: 2rem;
-  place-content: center;
+.header-blog {
+  background-image: url('{{site.baseurl}}/img/blog.webp');
+  background-position: center center;
+  background-attachment: fixed;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
 }
-.magazine p,
-.magazine h2{
-  width: 100%;
-  margin-bottom: 2rem;
+
+.header-blog h1 {
+  color: white;
   text-align: center;
+  width: min(90vw, 540px);
+}
+
+.magazine {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.magazine div {
+  width: min(90vw, 720px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .magazine article {
-  width: 300px;
-  justify-self: center;
+  background-color: var(--secundario);
+  padding: 0.7rem;
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+}
+
+.magazine article a {
+  width: 100%;
+  height: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  color: var(--grisTexto);
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+.magazine article a h3 {
+  width: 100%;
 }
 
 .magazine article a img {
   margin: 0.5rem 0;
   border-radius: 5px;
   box-shadow: var(--shadow);
+}
+
+.magazine h4{
+  text-align: center;
+  margin: 0;
 }

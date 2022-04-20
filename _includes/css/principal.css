@@ -18,6 +18,7 @@
   top: 0;
   width: inherit;
   height: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
   z-index: -1;
 }
@@ -56,15 +57,10 @@
 
 .portafolio {
   display: grid;
-  gap: 5rem;
+  gap: 12rem;
   background-color: #fda600;
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-  padding: clamp(5rem, 15vw, 10rem) clamp(1.5rem, 7vw, 12rem);
-}
-
-.portafolio img {
-  border-radius: 25px;
-  width: min(600px, 100%);
+  padding: 12rem clamp(5rem, 15vw, 10rem);
 }
 
 .portafolio article {
@@ -73,13 +69,34 @@
   gap: 2rem;
 }
 
-.portafolio article div{
+.portafolio img {
+  border-radius: 25px;
+  width: min(auto, 600px);
+  justify-self: center;
+}
+
+.portafolio article div {
+  background-color: var(--gris);
   display: flex;
   flex-wrap: wrap;
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  box-shadow: var(--shadow);
 }
 
 .portafolio article div p {
-  font-size: clamp(24px, 5vw, 3rem);
+  font-size: clamp(24px, 5vw, 2rem);
+  text-align: center;
+  color: white;
+}
+
+.comentario {
+  background-color: var(--gris);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15vh clamp(1rem, 7vw, 8rem);
 }
 
 /* Acordión de imágenes  */
@@ -89,13 +106,18 @@
   display: grid;
   place-content: center;
   gap: 3rem;
-  /* margin: 5rem 0; */
+  padding: 5vh clamp(1rem, 7vw, 8rem);
 }
 
 .pruebas h2,
-.pruebas p{
+.pruebas p {
   width: min(90%, 640px);
   margin: 0 auto;
+}
+
+.pruebas q {
+  text-align: center;
+  justify-self: center;
 }
 
 .acordeon {
@@ -106,7 +128,9 @@
   position: absolute;
   left: 2;
   bottom: 0;
+  font-family: var(--fuenteTitulos);
   color: white;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
   font-weight: 700;
   margin: 1rem;
 }
@@ -116,6 +140,9 @@
   flex-direction: row;
   width: 100%;
   height: 50vh;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
 }
 
 .item {
@@ -250,4 +277,8 @@
   color: white;
   max-width: 80vw;
   text-shadow: var(--shadow);
+}
+
+.huila h2 strong {
+  color: var(--principal);
 }

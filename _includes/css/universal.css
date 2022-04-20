@@ -1,3 +1,19 @@
+:root {
+  --principal: #FD7414;
+  --secundario: #FDA600;
+  --accion: #FB4600;
+  --grisFuentes: #141414;
+  --gris1: rgba(191, 191, 191, 1);
+  --gris2: rgba(140, 140, 140, 1);
+  --gris3: rgba(89, 89, 89, 1);
+  --gris: rgb(33, 32, 32);
+  --shadow: 0 2px 8px rgba(14, 14, 14, .3);
+  --blanco: rgb(255, 255, 255);
+  --blancoRGBA: rgba(255, 255, 255, 0.7);
+  --fuenteTitulos: 'Source Sans Pro', sans-serif;
+  --fuenteTexto: 'Open Sans', sans-serif;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,27 +29,13 @@ body {
   background-color: var(--blanco);
   color: var(--grisFuentes);
   font-family: var(--fuenteTexto);
+  font-size: 100%;
 }
 
-:root {
-  --principal: #FD7414;
-  --secundario: #FDA600;
-  --accion: #FB4600;
-  --grisFuentes: #141414;
-  --gris1: rgba(191, 191, 191, 1);
-  --gris2: rgba(140, 140, 140, 1);
-  --gris3: rgba(89, 89, 89, 1);
-  --gris4: rgba(64, 64, 64, 1);
-  --shadow: 0 2px 5px rgba(14, 14, 14, .3);
-  --blanco: rgb(255, 255, 255);
-  --blancoRGBA: rgba(255, 255, 255, 0.7);
-  --fuenteTitulos: 'Source Sans Pro', sans-serif;
-  --fuenteTexto: 'Open Sans', sans-serif;
-}
-
-h1,
-q {
+h1 {
   font-size: clamp(32px, 5vw, 2.5rem);
+  text-transform: capitalize;
+
 }
 
 h2 {
@@ -41,18 +43,18 @@ h2 {
   text-align: center;
 }
 
-h3 {
+h3,
+q {
   font-size: clamp(20px, 5vw, 1.8rem);
 }
 
 p {
-  font-size: clamp(16px, 1vw + .5rem, 1rem);
+  font-size: clamp(16px, 1vw + 1.5rem, 1.2rem);
 }
 
-q{
+q {
   display: block;
   width: min(90%, 640px);
-  margin: 5rem auto;
 }
 
 h1,
