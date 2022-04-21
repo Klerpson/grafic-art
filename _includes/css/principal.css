@@ -60,7 +60,7 @@
   gap: 12rem;
   background-color: #fda600;
   background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
-  padding: 12rem clamp(5rem, 15vw, 10rem);
+  padding: 12rem clamp(1rem, 7vw, 10rem);
 }
 
 .portafolio article {
